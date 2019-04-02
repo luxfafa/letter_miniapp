@@ -1,0 +1,9 @@
+<i-row>
+  <i-col span="24" i-class="col-class">
+    <view id="topview"></view>
+    <i-button bind:click="to_salvage" type="primary" shape="circle" size="large" loading="{{ btn_loading }}">{{ btn_text }}</i-button>
+  </i-col>
+  <i-modal visible="{{ model_show }}" bind:ok="model_ok" bind:cancel="model_cancel">
+      <view>{{ model_text }}</view>
+  </i-modal>
+</i-row>

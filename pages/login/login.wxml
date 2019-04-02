@@ -1,0 +1,11 @@
+<!--pages/login/login.wxml-->
+<view id="myc">
+    <view id="topview"></view>
+    <view id="showcontent">
+        <view id="showword">{{word}}</view>
+        <view id="showbtn">
+          <button plain="true" open-type="getUserInfo" bindgetuserinfo="getInfo">登录</button>
+        </view>
+        <view id="showtext">{{explain}}</view>
+    </view>
+</view>

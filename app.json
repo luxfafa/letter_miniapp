@@ -1,0 +1,21 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/myletter/myletter",
+    "pages/write/write",
+    "pages/my/my",
+    "pages/login/login",
+    "pages/salvage/salvage",
+    "pages/myletter/letter_detail",
+    "pages/salvage/my_salvage",
+    "pages/myletter/letter_passive_detail"
+    
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

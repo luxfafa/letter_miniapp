@@ -1,0 +1,20 @@
+<i-row>
+  <i-col span="24" i-class="col-class">
+    <view class="container" wx:if="{{loaded}}">
+        <i-spin fix></i-spin>
+    </view>
+    <i-message id="message" />
+    <i-card
+        title="{{item.nickname}}"
+        extra="{{item.format_time}}"
+        wx:for="{{salvage_list}}"
+        thumb="{{item.avatarUrl}}"
+        wx:key="ik"
+        wx:if="{{list_show}}"
+        bindtap="secert_detail"
+        data-search="{{item.id}}">
+        <view slot="footer">撰写于{{item.f_time}}</view>
+    </i-card>
+
+  </i-col>
+</i-row>

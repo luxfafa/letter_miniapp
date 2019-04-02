@@ -1,0 +1,7 @@
+<!--pages/index/index.wxml-->
+<view id="myc">
+  <view class="myletter" bindtap="toM">我的信</view>
+  <view class="myletter" bindtap="toW">写信</view>
+  <view class="myletter" bindtap="toG">打捞</view>
+  <view class="myletter" bindtap="toS">我打捞的</view>
+</view>

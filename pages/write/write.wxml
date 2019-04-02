@@ -1,0 +1,12 @@
+<i-row>
+  <i-col span="24" i-class="col-class">
+    <i-panel title="遥明夜">
+        <i-input value="{{ letter_content }}" type="textarea" title="信件内容" bindchange="letter_change" placeholder="请输入想说的话" maxlength="600" />
+    </i-panel>
+    <i-button bindtap="upload_letter" type="primary" size="large" loading="{{ btn_loading }}">提交</i-button>
+  </i-col>
+</i-row>
+<i-modal visible="{{ model_show }}" bind:ok="model_ok" bind:cancel="model_cancel">
+    <view>{{ model_text }}</view>
+</i-modal>
+<i-message id="message" />

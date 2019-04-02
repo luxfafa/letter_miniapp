@@ -1,0 +1,14 @@
+<i-row>
+  <i-col span="24" i-class="col-class">
+    <view class="container" wx:if="{{loaded}}">
+        <i-spin fix></i-spin>
+    </view>
+    <i-card title="" extra="{{userInfo.nickName}}" thumb="{{userInfo.avatarUrl}}" wx:if="{{item_show}}">
+        <view slot="content">{{letter_detail.content}}</view>
+        <view slot="footer">{{letter_detail.create_time}}</view>
+    </i-card>
+  </i-col>
+</i-row>
+<i-modal visible="{{ model_show }}" bind:ok="model_ok" bind:cancel="model_cancel">
+    <view>{{ model_text }}</view>
+</i-modal>

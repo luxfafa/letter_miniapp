@@ -1,0 +1,14 @@
+<i-row>
+  <i-col span="24" i-class="col-class">
+    <view class="container" wx:if="{{loaded}}">
+        <i-spin fix></i-spin>
+    </view>
+    <i-cell-group>
+      <i-cell title="{{item.subtitle}}" bindtap="secert_detail" data-search="{{item.id}}" is-link 
+      wx:for="{{sercert_list}}" wx:key="k" wx:if="{{list_show}}"></i-cell>
+    </i-cell-group>
+  </i-col>
+</i-row>
+<i-message id="message" />
+<i-load-more wx:if="{{letter_load}}"/>
+<i-load-more tip="我是有底线的" loading="{{ false }}" wx:if="{{!allow_get}}"/>

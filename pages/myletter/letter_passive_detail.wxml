@@ -1,0 +1,20 @@
+<i-row>
+  <i-col span="24" i-class="col-class">
+    <view class="container" wx:if="{{loaded}}">
+        <i-spin fix></i-spin>
+    </view>
+    <i-message id="message" />
+    <i-card title="" extra="{{letter_detail.nickname}}" thumb="{{letter_detail.avatarUrl}}" wx:if="{{item_show}}">
+        <view slot="content">{{letter_detail.content}}</view>
+        <view slot="footer">{{letter_detail.create_time}}</view>
+    </i-card>
+  </i-col>
+  
+  <i-col span="24" i-class="col-class">
+  <view id="clear"></view>
+    <i-button bind:click="reply" type="primary" long="true">回复</i-button>
+  </i-col>
+</i-row>
+<i-modal visible="{{ model_show }}" bind:ok="model_ok" bind:cancel="model_cancel">
+    <view>{{ model_text }}</view>
+</i-modal>
